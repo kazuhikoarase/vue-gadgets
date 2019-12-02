@@ -1,0 +1,19 @@
+{
+  "name": "vue-gadgets",
+  "version": "0.0.1",
+  "description": "Gadgets for Vue.js",
+  "author": "Kazuhiko Arase",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kazuhikoarase/vue-gadgets.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kazuhikoarase/vue-gadgets/issues"
+  },
+  "keywords": [
+  ],
+  "license": "MIT",
+  "devDependencies": {
+  }
+}
