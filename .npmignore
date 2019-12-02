@@ -1,5 +1,5 @@
 *.tgz
 .project
 .settings
-docs
+demo
 node_modules
