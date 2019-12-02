@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+  <script src="../lib/index.js"></script>
+</head>
+<body>
+
+<div id="app">
+  <color-picker></color-picker>
+</div>
+
+<script>
+
+!function() {
+  // register components.
+  for (var k in VueGadgets.components) {
+    Vue.component(k, VueGadgets.components[k]);
+  }
+}();
+
+new Vue({
+  el: '#app'
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+*.tgz
+.project
+.settings
+docs
+node_modules
