@@ -40,4 +40,4 @@ gulp.task('watch', function() {
     });
 });
 
-gulp.task('default',  gulp.series('build') );
+gulp.task('default', gulp.series('build') );

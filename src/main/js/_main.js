@@ -8,8 +8,23 @@ var VueGadgets = function() {
     };
   };
 
+  var closest = function(fn, event, root) {
+    if (!root) {
+      root = event.currentTarget;
+    }
+    var elm = event.target;
+    while (elm != null && elm != root) {
+      if (fn(elm) ) {
+        return elm;
+      }
+      elm = elm.parentNode;
+    }
+    return null;
+  };
+
   return {
     $: $,
+    closest: closest,
     components: {}
   };
 }();

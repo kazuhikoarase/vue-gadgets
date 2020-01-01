@@ -6,25 +6,10 @@
   <script src="../lib/index.js"></script>
 </head>
 <body>
-
 <div id="app">
-  <color-picker></color-picker>
+  <label><input type="checkbox" v-model="fakeCmyk"/>fake CMYK</label>
+  <color-picker v-model="colors" :fake-cmyk="fakeCmyk"></color-picker>
 </div>
-
-<script>
-
-!function() {
-  // register components.
-  for (var k in VueGadgets.components) {
-    Vue.component(k, VueGadgets.components[k]);
-  }
-}();
-
-new Vue({
-  el: '#app'
-});
-
-</script>
-
+<script src="index.js"></script>
 </body>
 </html>
