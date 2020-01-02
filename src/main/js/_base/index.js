@@ -1,4 +1,3 @@
-
 var VueGadgets = function() {
 
   var $ = function(e) {
@@ -22,9 +21,12 @@ var VueGadgets = function() {
     return null;
   };
 
+  var components = {};
+
   return {
     $: $,
     closest: closest,
-    components: {}
+    components: components
   };
+
 }();

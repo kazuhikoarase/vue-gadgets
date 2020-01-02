@@ -217,7 +217,6 @@
     };
   }();
 
-
   components['color-circle'] = {
     template: '<canvas :width="size" :height="size"></canvas>',
     props: {
@@ -417,7 +416,8 @@
             ' @change="hsv_changeHandler($event, i, hs.scale)" />{{hs.unit}}' +
             '</span></label>' +
           '</template>' +
-          '<br/><label><input type="checkbox" v-model="linked" />Linked</label>' +
+          '<br/><label @mousedown.prevent>' +
+            '<input type="checkbox" v-model="linked" />Linked</label>' +
           '<br/><div tabindex="0" v-for="(button, i) in buttonStates"' +
               ' style="margin-right:4px;line-height:1;position:relative;' +
                 'display:inline-block;outline:none;"' +
