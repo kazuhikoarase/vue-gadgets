@@ -9,7 +9,12 @@
 new Vue({
   el: '#app',
   data: {
-    colors: [ '#f00', '#fc0', '#0f0', '#00f' ],
+    colors: [ 
+      "#ff5884",
+      "#ffd56c",
+      "#55ff5b",
+      "#6962ff"
+    ],
     fakeCmyk: false
   }
 });

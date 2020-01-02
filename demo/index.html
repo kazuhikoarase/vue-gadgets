@@ -9,6 +9,8 @@
 <div id="app">
   <label><input type="checkbox" v-model="fakeCmyk"/>fake CMYK</label>
   <color-picker v-model="colors" :fake-cmyk="fakeCmyk"></color-picker>
+  <textarea style="width:20rem;height:10rem;"
+    :value="JSON.stringify(colors,null,2)" ></textarea>
 </div>
 <script src="index.js"></script>
 </body>
